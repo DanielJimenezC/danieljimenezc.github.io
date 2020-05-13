@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ENTRE 0 Y 320*/
+@media screen and (max-width: 320px){
+    .body-title {
+        font-size: 25px;
+    }
+    .body-secondtitle {
+        font-size: 20px;
+    }
+    .body-subtitle {
+        font-size: 14px;
+    }
+    .about {
+        text-align: left; 
+        grid-row: 1; 
+        grid-column: 2 / span 10;
+    }
+    .about-profile {
+        text-align: center; 
+        grid-row: 2; 
+        grid-column: 1 / span 12;
+    }
+    .profile {
+        padding-top: 5%;
+        width: 30%;
+        height: 30%;
+        margin: 1% 1% 1% 8%;
+    }
+    .about-text-bold {
+        text-align: justify;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .about-text {
+        text-align: justify;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .body-secondtitle {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    .image-margin {
+        margin: 4%;
+        width: 80px; 
+        height: 80px;
+    }
+    .programs {
+        padding-top: 50px;
+    }
+}
+
+/*ENTRE 321 Y 425*/
+@media screen and (min-width: 321px){
+    .body-title{
+        font-size: 30px;
+    }
+    .body-subtitle {
+        font-size: 16px;
+    }
+    .about {
+        text-align: left; 
+        grid-row: 1; 
+        grid-column: 2 / span 10;
+    }
+    
+    .about-profile {
+        text-align: center; 
+        grid-row: 2; 
+        grid-column: 1 / span 12;
+    }
+    .profile {
+        padding-top: 5%;
+        width: 35%;
+        height: 35%;
+        margin: 1% 1% 1% 1%;
+    }
+    .about-text-bold {
+        text-align: justify;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .about-text {
+        text-align: justify;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .body-secondtitle {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .image-margin {
+        margin: 4%;
+        width: 80px; 
+        height: 80px;
+    }
+}
+
+/*ENTRE 426 Y 768*/
+@media screen and (min-width: 426px){
+    .body-title{
+        font-size: 50px;
+    }
+    .body-subtitle {
+        font-size: 23px;
+    }
+    .about {
+        text-align: left; 
+        grid-row: 1; 
+        grid-column: 2 / span 5;
+        padding-top: 20%;
+    } 
+    .about-profile {
+        text-align: center; 
+        grid-row: 1; 
+        grid-column: 7 / span 6;
+    }
+    .profile {
+        width: 70%;
+        height: 70%;
+        margin: 1%;
+    }
+    .about-text-bold {
+        text-align: justify;
+        font-weight: bold;
+        font-size: 14px;
+        
+    }
+    .about-text {
+        text-align: justify;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .body-secondtitle {
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+}
+
+/*ENTRE 769 Y 1024*/
+@media screen and (min-width: 767px){
+    .body-title{
+        font-size: 55px;
+    }
+    .body-subtitle {
+        font-size: 26px;
+    }
+    .about {
+        text-align: left; 
+        grid-row: 1; 
+        grid-column: 2 / span 5;
+        padding-top: 25%;
+    }
+    .about-profile {
+        text-align: center; 
+        grid-row: 1; 
+        grid-column: 7 / span 6;
+    }
+    .profile {
+        width: 68%;
+        height: 68%;
+        margin: 1%;
+    }
+    .about-text-bold {
+        text-align: justify;
+        font-weight: bold;
+        font-size: 16px;
+        
+    }
+    .about-text {
+        text-align: justify;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .body-secondtitle {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .image-margin {
+        margin: 2%;
+        width: 140px; 
+        height: 140px;
+    }
+}
+
+/*ENTRE 1025 Y 1440*/
+@media screen and (min-width: 1023px){
+    .body-title{
+        font-size: 55px;
+    }
+    .body-subtitle {
+        font-size: 26px;
+    }
+    .about {
+        text-align: left; 
+        grid-row: 1; 
+        grid-column: 2 / span 5;
+        padding-top: 35%;
+    }
+    .about-profile {
+        text-align: center; 
+        grid-row: 1; 
+        grid-column: 7 / span 6;
+    }
+    .profile {
+        width: 68%;
+        height: 68%;
+        margin: 1%;
+    }
+    .about-text-bold {
+        text-align: justify;
+        font-weight: bold;
+        font-size: 18px;
+        
+    }
+    .about-text {
+        text-align: justify;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .body-secondtitle {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1439px){
+    .body-title{
+        font-size: 80px;
+    }
+    .body-subtitle {
+        font-size: 32px;
+    }
+    .about {
+        text-align: left; 
+        grid-row: 1; 
+        grid-column: 2 / span 5;
+        padding-top: 35%;
+    }
+    .about-profile {
+        text-align: center; 
+        grid-row: 1; 
+        grid-column: 7 / span 6;
+    }
+    .profile {
+        width: 65%;
+        height: 65%;
+        margin: 1%;
+    }
+    .about-text-bold {
+        text-align: justify;
+        font-weight: bold;
+        font-size: 24px;
+        
+    }
+    .about-text {
+        text-align: justify;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .body-secondtitle {
+        font-size: 60px;
+        padding-bottom: 20px;
+    }
+}
+
+.s1 {
+    /*background-image: url("https://cdn2.hubspot.net/hubfs/2604929/big%20data%204v.jpg");*/
+    background-size: cover;
+}
+
+body {
+    font-family: 'Roboto Slab', serif; 
+    display: grid;
+}
+
+.title {
+    font-size: 3.5em;
+}
+
+.second_title{
+    font-size: 2.5em;
+}
+
+.subtitle {
+    font-size: 1.5em;
+}
+
+.span-title {
+    color: orangered; 
+    font-size: 1.3em;
+}
+
+.span-subtitle {
+    color: orangered; 
+    font-size: 1.5em;
+}
+
+.span-extra {
+    color: orangered; 
+    font-size: 1em;
+}
+
+.dark-background {
+    color: #dedede;
+}
+
+.ligth-background {
+    color: #1c1c1c
+}
+
+.grid-style {
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: 1fr;
+}
+
+.technologies {
+    text-align: center; 
+    grid-row: 1; 
+    grid-column: 1 / span 12;
+}
+
+.programs {
+    text-align: center; 
+    grid-row: 2; 
+    grid-column: 1 / span 12;
+}
+
+/*EXTRAS*/
+.center-title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-size: 3.5em;
+}

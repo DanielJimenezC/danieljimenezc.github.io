@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" type="image/x-icon" href="/images/logo.ico" />
         <link rel="stylesheet" href="./style/fullpage.min.css">
         <link rel="stylesheet" href="./style/style.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
@@ -14,14 +15,16 @@
         <div id="fullpage">
             <section class="section s1" data-tooltip="Home" id="s1" value="impar">
                 <div style="text-align: center;">
-                    <h1 class="dark-background body-title">DANIEL JIMENEZ<span class="span-title">_</span></h1>
+                    <h1 class="dark-background body-title" style="margin-bottom: 1%;">DANIEL JIMENEZ<span class="span-title">_</span></h1>
+                    </br>
                     <h2 class="dark-background body-subtitle" style="font-weight: 500;"><span class="span-subtitle">_</span>Software Developer<span class="span-subtitle">_</span></h2> <!--center-subtitle-->
                 </div>
             </section>
+
             <section class="section" data-tooltip="About" id="s2">
                 <div class="grid-style">
                     <div class="about">
-                        <h1 class="ligth-background body-secondtitle"><span class="span-extra"><</span>About<span class="span-extra">/></span></h1>
+                        <h1 class="ligth-background body-secondtitle"><span class="span-extra">&lt</span>About<span class="span-extra">&gt</span></h1>
                         <h2 class="label-text about-text-bold">I'm a software developer who aims to create software solutions that meet quality 
                             attributes by combining Backend and Frontend technologies along with design patterns that are appropriate to the 
                             specific situation. All this together with clean architecture.</h2>
@@ -33,26 +36,47 @@
                     </div>
                 </div>
             </section>
+
             <section class="section" data-tooltip="Technologies" id="s3" value="impar">
                 <div style="text-align: center; top: 8%;">
                     <div class="grid-style">
                         <div class="technologies">
-                            <h1 class="dark-background body-secondtitle"><span class="span-extra"><</span>Technologies<span class="span-extra">/></span></h1>
+                            <h1 class="dark-background body-secondtitle"><span class="span-extra">&lt</span>Technologies<span class="span-extra">&gt</span></h1>
                         </div>
-                        <div class="programs" style="-webkit-box-flex: 1; flex: 1 1 auto; text-align: center; padding-top: 10px;">
-                            <img class="image-margin image-1" src="images/Angular.png"/>
-                            <img class="image-margin image-2" src="images/NET Core.png"/>
-                            <img class="image-margin image-3" src="images/springToolSuite.png"/>
-                            <img class="image-margin image-3" src="images/kotlin.png"/>
-                            <img class="image-margin image-2" src="images/swift.png"/>
-                            <img class="image-margin image-1" src="images/Python.png"/>
+                        <div class="programs">
+                            <a style="color: transparent">
+                                <img class="image-margin techicons image-1" src="images/Angular.png"/>
+                            </a>
+                            <a style="color: transparent">
+                                <img class="image-margin techicons image-2" src="images/NET Core.png"/>
+                            </a>
+                            <a style="color: transparent">
+                                <img class="image-margin techicons image-3" src="images/springToolSuite.png"/>
+                            </a>
+                            <a style="color: transparent">
+                                <img class="image-margin techicons image-3" src="images/kotlin.png"/>
+                            </a>
+                            <a style="color: transparent">
+                                <img class="image-margin techicons image-2" src="images/swift.png"/>
+                            </a>
+                            <a style="color: transparent">
+                                <img class="image-margin techicons image-1" src="images/Python.png"/>
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
+
             <section class="section" data-tooltip="Certifications" id="s4">
                 <div style="text-align: center;">
-                    <h1 class="ligth-background body-secondtitle"><span class="span-extra"><</span>Certifications<span class="span-extra">/></span></h1>
+                    <div class="certifications">
+                        <h1 class="ligth-background body-secondtitle"><span class="span-extra">&lt</span>Certifications<span class="span-extra">&gt</span></h1>
+                    </div>
+                    <div class="certificate">
+                        <a href="https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-DanielArturoJimenezCanales-780055.pdf" style="color:transparent" target="_blank">
+                            <img class="cert-margin certicons cert-1" src="images/SFC.png"/>
+                        </a>
+                    </div>
                 </div>
             </section>
         </div>
@@ -62,7 +86,6 @@
         <script src="./dist/scrolloverflow.min.js"></script>
         <script src="./dist/fullpage.min.js"></script>
         <script src="./dist/app.js"></script>
-
 
         <script type="text/javascript">
             $(document).ready(function(){

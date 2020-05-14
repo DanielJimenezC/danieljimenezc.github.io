@@ -40,9 +40,13 @@ new fullpage('#fullpage', {
             var tech1 = document.querySelectorAll('.image-1');
             var tech2 = document.querySelectorAll('.image-2');
             var tech3 = document.querySelectorAll('.image-3');
-            tl.fromTo(tech1, 0.3, { y: "30", opacity: 0 }, { y: 0, opacity: 1 })
-              .fromTo(tech2, 0.3, { y: "30", opacity: 0 }, { y: 0, opacity: 1 })
-              .fromTo(tech3, 0.3, { y: "30", opacity: 0 }, { y: 0, opacity: 1 });
+            tl.fromTo(tech1, 0.4, { y: "30", opacity: 0 }, { y: 0, opacity: 0.5 })
+              .fromTo(tech2, 0.4, { y: "30", opacity: 0 }, { y: 0, opacity: 0.5 })
+              .fromTo(tech3, 0.4, { y: "30", opacity: 0 }, { y: 0, opacity: 0.5 });
+        }
+        if (destination.index === 3) {
+            var cert = document.querySelectorAll('.cert-1');
+            tl.fromTo(cert, 0.4, { y: "30", opacity: 0 }, { y: 0, opacity: 0.7 });
         }
     }
 });

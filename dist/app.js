@@ -1,10 +1,10 @@
 new fullpage('#fullpage', {
 
     //Licencia
-    licenseKey: 'OpenSource',
+    licenseKey: '15560068-077B4EC4-B9C3AECE-631A2B58',
 
     //Navigation
-    anchors: ['Home', 'About', 'Technologies', 'Certifications'],
+    anchors: ['Home', 'About', 'Technologies', 'Certifications', 'Contact'],
     navigation: true,
     loopBottom: true,
 
@@ -14,12 +14,27 @@ new fullpage('#fullpage', {
     scrollOverflow: true,
 
     //Design
-    sectionsColor: ['#1c1c1c', '#dedede', '#1c1c1c', '#dedede'],
+    sectionsColor: ['#1c1c1c', '#dedede', '#1c1c1c', '#dedede', '#1c1c1c'],
+    
+    afterRender() {
+        var sec1 = document.querySelectorAll('.s1');
+        var t1 = document.querySelectorAll('.t1');
+        var t2 = document.querySelectorAll('.t2');
+        const avi = new TimelineMax({ delay: 0.1 });
+        avi.fromTo(sec1, 1, { y: "150", opacity: 0 }, { y: 0, opacity: 1 })
+           .fromTo(t1, 0.5, { y: "50", opacity: 0 }, { y: 0, opacity: 1 })
+           .fromTo(t2, 0.3, { y: "20", opacity: 0 }, { y: 0, opacity: 1 });
+        console.log("Se renderizo");
+    },
 
     onLeave: (origin, destination, direction) => {
         const section = destination.item;
         const title = section.querySelector("h1");
+        var sec1 = document.querySelectorAll('.s1');
         const tl = new TimelineMax({ delay: 0.5 });
+        if (destination.index === 0) {
+            tl.fromTo(sec1, 1, { y: "150", opacity: 0 }, { y: 0, opacity: 1 });
+        }
         tl.fromTo(title, 0.5, { y: "50", opacity: 0 }, { y: 0, opacity: 1 });
 
         if (destination.index === 0) {
@@ -47,6 +62,14 @@ new fullpage('#fullpage', {
         if (destination.index === 3) {
             var cert = document.querySelectorAll('.cert-1');
             tl.fromTo(cert, 0.4, { y: "30", opacity: 0 }, { y: 0, opacity: 0.7 });
+        }
+        if (destination.index === 4) {
+            var contc1 = document.querySelectorAll('.contact-1');
+            var contc2 = document.querySelectorAll('.contact-2');
+            var credits = document.querySelectorAll('.credits');
+            tl.fromTo(contc1, 0.4, { y: "30", opacity: 0 }, { y: 0, opacity: 0.5 })
+              .fromTo(contc2, 0.4, { y: "30", opacity: 0 }, { y: 0, opacity: 0.5 })
+              .fromTo(credits, 0.4, {  y: "30", opacity: 0 }, { y: 0, opacity: 1 })
         }
     }
 });

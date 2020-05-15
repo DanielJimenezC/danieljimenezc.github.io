@@ -139,9 +139,18 @@
     <script src="./dist/scrolloverflow.min.js"></script>
     <script src="./dist/fullpage.min.js"></script>
     <script src="./dist/app.js"></script>
-
+    <script>
+        document.cookie = 'same-site-cookie=foo; SameSite=Lax'; 
+        document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
+    </script>
     <script type="text/javascript">
         $(document).ready(function () {
+
+            if(window.performance){
+                var timeSincePageLoad = Math.round(performance.now());
+                gtag('event','timing_complete', { 'name' : 'load', 'value': timeSincePageLoad, 'event_category': 'JS Dependencies' });
+            }
+
             jQuery(window).bind('hashchange', function () {
                 var tab = window.location.hash.slice(1);
                 if (tab == "Home" || tab == "Technologies" || tab == "Contact")
